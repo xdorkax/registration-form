@@ -1,0 +1,140 @@
+#registration-form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+body {
+  background-color: rgba(143, 45, 45, 0.508);
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #474952c0;
+}
+
+
+.container:hover {
+  background-color: #5458718c;
+}
+
+h1 {
+  text-align: center;
+  text-decoration-color: #e28e69;
+  text-decoration-line: underline;
+}
+
+#form-1 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#consent {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+#consent input[type="checkbox"] {
+  border: 2px solid #e28e69;
+  outline-color: #e28e69;
+}
+
+#consent input[type="checkbox"]:checked {
+  background-color: #e28e69;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+button {
+  width: 100%;
+  background-color: #e28d6980;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  border-style: groove;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d86e39;
+}
+
+#message {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.success {
+  color: #fad7a8;
+}
+
+.error {
+  color: #ffb368f7;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-group {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: rgba(143, 45, 45, 0.7);
+  }
+}
+
+@media (max-width: 600px) {
+  button:hover {
+    background-color: #e28d69;
+  }
+}

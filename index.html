@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Regisztrációs Űrlap</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Regisztrációs Űrlap</h1>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email cím:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-email">Email cím megerősítése:</label>
+                <input type="email" id="confirm-email" name="confirm-email" required>
+            </div>
+            <div class="form-group">
+                <label for="source">Honnan hallott rólunk?</label>
+                <select id="source" name="source">
+                    <option value="internetrol">Internetről</option>
+                    <option value="televiziobol">Televízióból</option>
+                    <option value="egyeb">Egyéb helyről</option>
+                </select>
+            </div>
+            <div class="form-1">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Adatkezelési nyilatkozatot elfogadom</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Regisztráció</button>
+            </div>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
