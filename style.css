@@ -6,10 +6,32 @@
 
 body {
   background-color: rgba(143, 45, 45, 0.508);
-  font-family: Arial, sans-serif;
   color: #ffffff;
   margin: 40px auto;
   width: 100%;
+}
+
+.person-icon::before {
+  font-family: 'Material Symbols Outlined', sans-serif;
+  content: "\e7fd";
+  font-size: 50px;
+  color: #e28e69;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .person-icon::before {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 313px) {
+  .person-icon::before {
+    font-size: 40px;
+  }
 }
 
 .container {
@@ -33,10 +55,24 @@ body {
 
 h1 {
   text-align: center;
+  padding-left: 20px;
   text-decoration-color: #e28e69;
-  text-decoration-line: underline;
+  background-image: linear-gradient(to right, #e28e69 10%, transparent 80%);
+  background-position: 47px 0;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+  h1 {
+    background-position: 30px 0;
+  }
 }
 
+@media (max-width: 480px) {
+  h1 {
+    background-position: 20px 0;
+  }
+}
 #form-1 {
   display: block;
   margin-bottom: 5px;
@@ -44,6 +80,7 @@ h1 {
 
 .form-group {
   margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .form-group label {
